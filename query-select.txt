@@ -44,4 +44,13 @@ INSERT INTO `students` (`id`, `degree_id`, `name`, `surname`, `date_of_birth`, `
 VALUES (NULL, '11', 'Claudio', 'Patti', '1997-08-27', 'pttcklsjdj92883839', '2024-10-01', '342535346436436', 'claudiopatti@booleancarears.com');
 
 IO. Cambiare il numero dell'ufficio del professor Pietro Rizzo in 126
+UPDATE teachers
+SET office_number = '126'
+WHERE name = 'pietro'
+AND surname = 'rizzo';
+
 11. Eliminare dalla tabella studenti il record creato precedentemente al punto 9
+DELETE
+FROM `students`
+WHERE name = 'claudio'
+AND surname = 'patti';
